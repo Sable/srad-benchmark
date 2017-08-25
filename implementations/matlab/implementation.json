@@ -1,0 +1,22 @@
+{
+    "type": "implementation",
+    "short-name":"matlab",
+    "description":"Matlab port of C implementation",
+    "language":"matlab",
+    "core-source-files":[
+       { "file": "./srad_core.m"}
+    ],
+    "runner-source-file": { "file": "./runner.m" },
+    "runner-arguments": [
+        {
+            "expand": "/experiment/input-size",
+            "path": "/repetitions"
+        },
+        {
+            "expand": "/experiment/input-size",
+            "path": "/lambda"
+        },
+        { "file": "./image.pgm" }
+    ],
+    "libraries":[]
+}

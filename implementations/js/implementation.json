@@ -1,0 +1,22 @@
+{
+    "type": "implementation",
+    "short-name":"js",
+    "description":"JavaScript port of C implementation",
+    "language":"js",
+    "core-source-files":[
+    ],
+    "runner-source-file": { "file": "./srad.js" },
+    "runner-arguments": [
+        { 
+            "expand": "/experiment/input-size",
+            "path": "/repetitions"
+        },
+        { 
+            "expand": "/experiment/input-size",
+            "path": "/lambda"
+        }
+    ],
+    "libraries":[
+        { "file": "./data.js" }
+    ]
+}
